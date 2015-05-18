@@ -1,5 +1,3 @@
 #Writing on GitHub
-*Writing on GitHub*
-**Writing on GitHub**
-**Writing _on_ GitHub**
+**Writing on _GitHub_** - 
 https://help.github.com/categories/writing-on-github/
