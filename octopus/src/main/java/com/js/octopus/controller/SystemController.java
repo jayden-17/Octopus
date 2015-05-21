@@ -23,10 +23,14 @@ public class SystemController {
 	 public @ResponseBody List<SystemEntity> getAllSystemStatus() {
 		 return systemService.findAll();
 	 }
-	 
 	 @RequestMapping(value="/{id}",method=RequestMethod.GET)
 	 public @ResponseBody SystemEntity getSystemStatus(@PathVariable Long id) {
 		 return systemService.findOne(id);
+	 }
+	 
+	 @RequestMapping(value="/hostIp/{hostIp}",method=RequestMethod.GET)
+	 public @ResponseBody List<SystemEntity> getSystemStatus(@PathVariable String hostIp) {
+		 return systemService.findByHostIp(hostIp);
 	 }
 	 
 	 @RequestMapping(method=RequestMethod.POST)
