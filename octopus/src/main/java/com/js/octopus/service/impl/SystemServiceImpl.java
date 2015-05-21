@@ -25,4 +25,8 @@ public class SystemServiceImpl implements SystemService {
 		return systemRepository.findOne(id);
 	}
 
+	public List<SystemEntity> findByHostIp(String hostip) {
+		return systemRepository.findByHostIp(hostip);
+	}
+	
 }

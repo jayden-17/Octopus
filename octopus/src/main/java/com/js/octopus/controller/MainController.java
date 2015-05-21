@@ -12,4 +12,9 @@ public class MainController {
 	public @ResponseBody String main(){
 		return "Hello Octopus";
 	}
+	
+	@RequestMapping("/abcd")
+	public @ResponseBody String main2(){
+		return "배은미";
+	}
 }

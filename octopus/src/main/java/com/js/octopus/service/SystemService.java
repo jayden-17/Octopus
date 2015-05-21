@@ -8,4 +8,5 @@ public interface SystemService {
 
 	public List<SystemEntity> findAll();
 	public SystemEntity findOne(Long id);
+	public List<SystemEntity> findByHostIp(String hostip);
 }
